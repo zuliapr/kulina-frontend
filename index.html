@@ -31,7 +31,7 @@
 	
 
 	.bodycontainer{
-		margin:100px auto;
+		margin:50 px auto;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -164,7 +164,8 @@
 
 	}    
 	button:hover {
-		  background: #00ddaa;
+		  background: rgba(255, 99, 71, 0.5);
+		  color: tomato;
 	}
 
 	button:active{
@@ -179,21 +180,44 @@
 	@media only screen and (max-width: 320px){
 		.headercontainer{
 			background-size: contain;
+			height: 350px;
 		}
-		.ttl{
-			margin-top:10px;
-			font-size: 10px;
+		p.ttl{
+			margin-top:160px;
+			font-size: 30px;
+			color: white;
+			letter-spacing: 2px;
 
+		}
+		.header{
+			flex-direction: column;
+			background-color: rgba(255, 99, 71, 0.9);
+		}
+
+
+
+		.bar{
+			text-align: center;
 		}
 
 		.bar span a{
-			color: black;
+			font-weight: normal;
+		}
+
+		hr{
+			visibility: hidden;
+		}
+
+		.title h1{
+			margin-bottom: 0px;
 		}
 
 		.bodycontainer{
 			flex-direction: column;
 			width: 100%;
 			margin-left: 5px;
+			margin-top: 4px;
+			margin-bottom: 10px;
 		}
 		.legcontainer{
 			flex-direction: column;
@@ -201,6 +225,7 @@
 		}
 		.container{
 			width: 90%;
+			height: 130px;
 			margin: 10px auto;
 		}
 		.content-container{
@@ -211,7 +236,7 @@
 
 		.buttons{
 			width: 90%;
-			margin:1px auto;
+			margin:5px auto;
 		}
 		.contents{
 			width: 100%;
@@ -219,10 +244,21 @@
 		.content{
 			width: 90%;
 		}
+
+		div.text{
+			text-align: center;
+			margin:auto;
+		}
+
+		.socialmedia{
+			visibility: hidden;
+		}
+	
 	} 
 	.logo{
 		margin-top: 10px;
 		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.copyright{
